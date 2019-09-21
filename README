@@ -1,0 +1,1 @@
+A template for a repo that contains a package and a bunch of jupyter notebooks and the scaffolding to run tests and convert notebooks to reports automatically inside Docker.

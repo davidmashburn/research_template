@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  research_template:
+    build:
+      context: ./
+    volumes:
+      - ./research_template:/research_template
+      - ./examples:/examples
+      - ./reports:/reports
+      - ./scripts:/scripts

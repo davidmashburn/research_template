@@ -1,0 +1,1 @@
+docker-compose run --rm research_template bash -c "cd /scripts && bash build_all_reports.sh"
