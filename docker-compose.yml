@@ -5,7 +5,10 @@ services:
     build:
       context: ./
     volumes:
+      - ./config:/config
       - ./research_template:/research_template
       - ./examples:/examples
       - ./reports:/reports
       - ./scripts:/scripts
+    ports:
+      - "8910:8910"
