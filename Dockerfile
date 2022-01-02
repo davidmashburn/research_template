@@ -1,4 +1,4 @@
-FROM python:3.7-slim
+FROM python:3.10-slim
 
 WORKDIR /research_template
 
@@ -7,8 +7,10 @@ COPY ./requirements-dev.txt ./
 
 RUN apt-get update && apt-get install -y libfreetype6-dev libpng-dev ffmpeg
 
-RUN pip install -r requirements.txt && pip install -r requirements-dev.txt
+RUN pip install -r requirements-dev.txt
+RUN pip install -r requirements.txt
 RUN pip install jupyter jupytext
-RUN echo '/' > /usr/local/lib/python3.7/site-packages/path_hack.pth
+RUN python -m ipykernel install
+RUN echo '/' > /usr/local/lib/python3.10/site-packages/path_hack.pth
 
 CMD bash
