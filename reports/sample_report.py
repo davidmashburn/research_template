@@ -38,7 +38,7 @@ print(f"research_template version {research_template.__version__}")
 ex = simple_example(cache=True)
 
 # %% [markdown]
-# Plot of a
+# Plot of variable "a"
 
 # %%
 _ = plt.plot(ex["a"])
